@@ -1,0 +1,22 @@
+{
+  "name": "crawler-2.0",
+  "version": "1.0.0",
+  "description": "## Process  -> Fetch url from database (sorted by citations)   -> Fetch page   -> Get title, description (and optionally text on the page)   -> Get links on the page   -> Parse links (remove # and ? tags at the end of the url and disregard \"about:blank\"-urls)  -> Check which links are already in the database (+1 citation)  -> Add the new links to the database  -> Repeat",
+  "main": "crawler.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "jsdom": "^19.0.0",
+    "meilisearch": "^0.25.0",
+    "normalize-url": "^7.0.3",
+    "pg": "^8.7.3",
+    "typesense": "^1.2.2",
+    "url-parse": "^1.5.10",
+    "url-parser": "^0.0.1"
+  }
+}
